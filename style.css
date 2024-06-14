@@ -1,0 +1,101 @@
+* body {
+    font-family: copperplate, fantasy;
+    margin: 0;
+    padding: 0;
+    background-color: #808000;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.main-header {
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+
+.main-header::before,
+.main-header::after {
+    content: "*";
+    position: relative;
+    color: gold;
+    font-size: 32px;
+}
+
+.main-header::before {
+    left: -10px;
+}
+
+.main-header::after {
+    right: -10px;
+}
+
+.intro-paragraph {
+    font-size: 18px;
+    color: #000000;
+    margin: 10px;
+    position: relative;
+}
+
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '"';
+    position: relative;
+    color: gold;
+    font-size: 24px;
+}
+
+.intro-paragraph::before {
+    left: 0px;
+}
+
+.intro-paragraph::after {
+    right: 0px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #080808, #050505);
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta-button::before,
+.cta-button::after {
+    content: "☝️";
+    position: relative;
+    color: gold;
+    font-size: 24px;
+}
+
+.cta-button::before {
+    left: -20px;
+}
+
+.cta-button::after {
+    right: -20px;
+}
